@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Komputasi Aljabar Linear &#8212; KAL Tia</title>
+    <title>SISTEM PERSAMAAN LINEAR (SPL) &#8212; KAL Tia</title>
   
   
   
@@ -60,10 +60,10 @@
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'intro';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Sistem Persamaan Linear';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="SISTEM PERSAMAAN LINEAR (SPL)" href="Sistem%20Persamaan%20Linear.html" />
+    <link rel="prev" title="Komputasi Aljabar Linear" href="intro.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -115,8 +115,6 @@
       
       
       
-        
-      
       <dialog id="pst-primary-sidebar-modal"></dialog>
       <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
         
@@ -136,7 +134,7 @@
     
   
 
-<a class="navbar-brand logo" href="#">
+<a class="navbar-brand logo" href="intro.html">
   
   
   
@@ -163,14 +161,14 @@
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
-            <li class="toctree-l1 current active">
-                <a class="reference internal" href="#">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
                     Komputasi Aljabar Linear
                 </a>
             </li>
         </ul>
-        <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="Sistem%20Persamaan%20Linear.html">SISTEM PERSAMAAN LINEAR (SPL)</a></li>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">SISTEM PERSAMAAN LINEAR (SPL)</a></li>
 </ul>
 
     </div>
@@ -247,7 +245,7 @@
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fintro.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FSistem Persamaan Linear.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -277,7 +275,7 @@
       
       
       
-      <li><a href="_sources/intro.md" target="_blank"
+      <li><a href="_sources/Sistem Persamaan Linear.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -340,7 +338,9 @@
 <button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
 </button>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -351,11 +351,39 @@
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Komputasi Aljabar Linear</h1>
+    <h1>SISTEM PERSAMAAN LINEAR (SPL)</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#jenis-sistem-persamaan-linear">JENIS SISTEM PERSAMAAN LINEAR</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sistem-persamaan-linear-satu-variabel-splsv">1. Sistem Persamaan Linear Satu Variabel (SPLSV)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sistem-persamaan-linear-dua-variabel-spldv">2. Sistem Persamaan Linear Dua Variabel (SPLDV)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sistem-persamaan-linear-tiga-variabel-spltv">3. Sistem Persamaan Linear Tiga Variabel (SPLTV)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ciri-ciri-sistem-persamaan-linear">CIRI-CIRI SISTEM PERSAMAAN LINEAR</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#jenis-solusi-sistem-persamaan-linear">JENIS SOLUSI SISTEM PERSAMAAN LINEAR</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sistem-dengan-satu-solusi">1. Sistem dengan satu solusi</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sistem-persamaan-linear-tak-hingga">2. sistem persamaan linear tak hingga</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sistem-tanpa-solusi">3. Sistem tanpa solusi</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#metode-penyelesaian-sistem-persamaan-linear">METODE PENYELESAIAN SISTEM PERSAMAAN LINEAR</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#metode-substitusi">1. Metode Substitusi</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#metode-eliminasi">2. Metode Eliminasi</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#metode-gauss">3. Metode Gauss</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#metode-matriks">4. Metode Matriks</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#metode-grafik">5. Metode Grafik</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -365,10 +393,104 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="komputasi-aljabar-linear">
-<h1>Komputasi Aljabar Linear<a class="headerlink" href="#komputasi-aljabar-linear" title="Link to this heading">#</a></h1>
-<div class="toctree-wrapper compound">
+  <section class="tex2jax_ignore mathjax_ignore" id="sistem-persamaan-linear-spl">
+<h1>SISTEM PERSAMAAN LINEAR (SPL)<a class="headerlink" href="#sistem-persamaan-linear-spl" title="Link to this heading">#</a></h1>
+<p>system persamaan linear adalah sekumpulan dua atau lebih persamaan linear yang memiliki variable sama dalam setiap persamaan.</p>
+<section id="jenis-sistem-persamaan-linear">
+<h2>JENIS SISTEM PERSAMAAN LINEAR<a class="headerlink" href="#jenis-sistem-persamaan-linear" title="Link to this heading">#</a></h2>
+<section id="sistem-persamaan-linear-satu-variabel-splsv">
+<h3>1. Sistem Persamaan Linear Satu Variabel (SPLSV)<a class="headerlink" href="#sistem-persamaan-linear-satu-variabel-splsv" title="Link to this heading">#</a></h3>
+<p>Sistem persamaan yang hanya mempunyai satu variabel yang berpangkat satu.</p>
+<ul>
+<li><div class="highlight-none notranslate"><div class="highlight"><pre><span></span>    bentuk umum: ax + b = 0
+</pre></div>
 </div>
+</li>
+<li><div class="highlight-none notranslate"><div class="highlight"><pre><span></span>    contoh: 10x + 2 = 22
+            x = 22-2/10 
+            x = 2
+</pre></div>
+</div>
+</li>
+</ul>
+</section>
+<section id="sistem-persamaan-linear-dua-variabel-spldv">
+<h3>2. Sistem Persamaan Linear Dua Variabel (SPLDV)<a class="headerlink" href="#sistem-persamaan-linear-dua-variabel-spldv" title="Link to this heading">#</a></h3>
+<p>Sistem persamaan yang mempunyai dua variabel dan berpangkat satu.</p>
+<ul>
+<li><div class="highlight-none notranslate"><div class="highlight"><pre><span></span>    bentuk umum: ax + by = c
+</pre></div>
+</div>
+</li>
+<li><div class="highlight-none notranslate"><div class="highlight"><pre><span></span>    contoh: 2x + 3y = 6
+</pre></div>
+</div>
+</li>
+</ul>
+</section>
+<section id="sistem-persamaan-linear-tiga-variabel-spltv">
+<h3>3. Sistem Persamaan Linear Tiga Variabel (SPLTV)<a class="headerlink" href="#sistem-persamaan-linear-tiga-variabel-spltv" title="Link to this heading">#</a></h3>
+<p>Sistem Persamaan Dengan Menggunakan Tiga Variabel Dan Memiliki Pangkat Satu.</p>
+<ul>
+<li><div class="highlight-none notranslate"><div class="highlight"><pre><span></span>    bentuk umum: ax + by + cz = d
+</pre></div>
+</div>
+</li>
+<li><div class="highlight-none notranslate"><div class="highlight"><pre><span></span>    contoh: 2x - y + 3z = 14
+</pre></div>
+</div>
+</li>
+</ul>
+</section>
+</section>
+<section id="ciri-ciri-sistem-persamaan-linear">
+<h2>CIRI-CIRI SISTEM PERSAMAAN LINEAR<a class="headerlink" href="#ciri-ciri-sistem-persamaan-linear" title="Link to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>Setiap variabelnya mempunyai pangkat satu.</p></li>
+<li><p>Membentuk garis lurus.</p></li>
+<li><p>Tidak memiliki perkalian variabel.</p></li>
+<li><p>Penjumlahan, pengurangan, perkalian dan pembagian pada kedua ruas persamaan linear tidak akan mengubah bentuk nilai persamaan.</p></li>
+</ol>
+</section>
+<section id="jenis-solusi-sistem-persamaan-linear">
+<h2>JENIS SOLUSI SISTEM PERSAMAAN LINEAR<a class="headerlink" href="#jenis-solusi-sistem-persamaan-linear" title="Link to this heading">#</a></h2>
+<section id="sistem-dengan-satu-solusi">
+<h3>1. Sistem dengan satu solusi<a class="headerlink" href="#sistem-dengan-satu-solusi" title="Link to this heading">#</a></h3>
+<p>Ketika sistem memiliki 1 titik potong saja.</p>
+</section>
+<section id="sistem-persamaan-linear-tak-hingga">
+<h3>2. sistem persamaan linear tak hingga<a class="headerlink" href="#sistem-persamaan-linear-tak-hingga" title="Link to this heading">#</a></h3>
+<p>Yaitu ketika Sistem memiliki banyak solusi karena persamaan-persamaannya saling bergantung atau saling tumpah tindih.</p>
+</section>
+<section id="sistem-tanpa-solusi">
+<h3>3. Sistem tanpa solusi<a class="headerlink" href="#sistem-tanpa-solusi" title="Link to this heading">#</a></h3>
+<p>Sistem tidak memiliki solusi karena persamaan-persamaannya saling bertentangan atau sejajar.</p>
+</section>
+</section>
+<section id="metode-penyelesaian-sistem-persamaan-linear">
+<h2>METODE PENYELESAIAN SISTEM PERSAMAAN LINEAR<a class="headerlink" href="#metode-penyelesaian-sistem-persamaan-linear" title="Link to this heading">#</a></h2>
+<section id="metode-substitusi">
+<h3>1. Metode Substitusi<a class="headerlink" href="#metode-substitusi" title="Link to this heading">#</a></h3>
+<p>Merupakan cara untuk menyelesaikan persamaan dengan memasukkan salah satu persamaan ke dalam persamaan yang lain.</p>
+</section>
+<section id="metode-eliminasi">
+<h3>2. Metode Eliminasi<a class="headerlink" href="#metode-eliminasi" title="Link to this heading">#</a></h3>
+<p>Adalah metode penyelesaian persamaan dengan menghilangkan salah satu dari variabel yang ada dengan cara menambahkan atau mengurangi kedua persamaan sehingga akan menyisakan satu variabel.</p>
+</section>
+<section id="metode-gauss">
+<h3>3. Metode Gauss<a class="headerlink" href="#metode-gauss" title="Link to this heading">#</a></h3>
+<p>Merupakan metode eliminasi persamaan linear menjadi bentuk matriks yang lebih sederhana.</p>
+</section>
+<section id="metode-matriks">
+<h3>4. Metode Matriks<a class="headerlink" href="#metode-matriks" title="Link to this heading">#</a></h3>
+<p>Merupakan metode yang apabila variabelnya sama maka lebih efisien memakai metode matriks ini.</p>
+</section>
+<section id="metode-grafik">
+<h3>5. Metode Grafik<a class="headerlink" href="#metode-grafik" title="Link to this heading">#</a></h3>
+<p>Adalah cara menyelesaikan persamaan linear menentukan titik potong dengan cara menggambar grafik dari dua persamaan  linear.</p>
+<iframe src="https://www.geogebra.org/graphing/m7untvea?embed" width="800" height="600" allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0"></iframe>
+</section>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -401,14 +523,14 @@
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
-    <a class="right-next"
-       href="Sistem%20Persamaan%20Linear.html"
-       title="next page">
+    <a class="left-prev"
+       href="intro.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">SISTEM PERSAMAAN LINEAR (SPL)</p>
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Komputasi Aljabar Linear</p>
       </div>
-      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div>
                 </footer>
@@ -416,6 +538,42 @@
             </div>
             
             
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#jenis-sistem-persamaan-linear">JENIS SISTEM PERSAMAAN LINEAR</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sistem-persamaan-linear-satu-variabel-splsv">1. Sistem Persamaan Linear Satu Variabel (SPLSV)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sistem-persamaan-linear-dua-variabel-spldv">2. Sistem Persamaan Linear Dua Variabel (SPLDV)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sistem-persamaan-linear-tiga-variabel-spltv">3. Sistem Persamaan Linear Tiga Variabel (SPLTV)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ciri-ciri-sistem-persamaan-linear">CIRI-CIRI SISTEM PERSAMAAN LINEAR</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#jenis-solusi-sistem-persamaan-linear">JENIS SOLUSI SISTEM PERSAMAAN LINEAR</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sistem-dengan-satu-solusi">1. Sistem dengan satu solusi</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sistem-persamaan-linear-tak-hingga">2. sistem persamaan linear tak hingga</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sistem-tanpa-solusi">3. Sistem tanpa solusi</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#metode-penyelesaian-sistem-persamaan-linear">METODE PENYELESAIAN SISTEM PERSAMAAN LINEAR</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#metode-substitusi">1. Metode Substitusi</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#metode-eliminasi">2. Metode Eliminasi</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#metode-gauss">3. Metode Gauss</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#metode-matriks">4. Metode Matriks</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#metode-grafik">5. Metode Grafik</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
