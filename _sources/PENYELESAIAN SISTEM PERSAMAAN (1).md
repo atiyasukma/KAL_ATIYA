@@ -5,29 +5,7 @@ title: 'PENYELESAIAN SISTEM PERSAMAAN '
 
 ## PENYELESAIAN SISTEM PERSAMAAN LINEAR
 ### Operasi Baris Elementer
-operasi yang dilakukan pada baris suatu matriks untuk mengubahnya menjadi bentuk yang lebih sederhana. OBE dapat digunakan untuk menyelesaikan sistem persamaan linear (SPL) dan menentukan invers matriks.
-
-*  Tiga operasi dasar dalam OBE adalah:
-1.  Row scaling: Mengalikan baris matriks dengan konstanta bukan nol.
-Notasi: Ri←kRi, dengan k≠0
-2.  Row swapping atau pertukaran dua baris: Menukar urutan baris pada sebuah matriks.
-Notasi: Ri↔Rj
-3. Row replacement: Mengganti baris matriks dengan hasil penjumlahan atau pengurangan baris matriks tersebut dengan baris matriks lainnya.
-Notasi: Ri←Ri+kRj
-
 ### Eleminasi Gauss
-metode untuk operasi nilai-nilai dalam matriks, untuk membuat matriks lebih sederhana lagi. Metode eliminasi gaus dikembangkan dari metode eliminasi, dengan cara menghilangkan atau mengurangi jumlah variabel, untuk mendapatkan nilai variabel bebas.
-liminasi Gauss mengubah persamaan linear menjadi bentuk matriks, kemudian diubah ke bentuk Eselon Baris melalui Operasi Baris Elementer. Setelah itu bentuk matriks diselesaikan dengan substitusi balik. pada eliminasi gauss ini matriks hanya akan tersisa satu variabel saja.
-* Langkah-langkah eliminasi Gauss
-1. Matriks Augmented
- Gabungkan matriks koefisien dan matriks hasil menjadi satu matriks augmented.
-
-2. Membentuk Segitiga Atas (Eliminasi Maju)
- Gunakan Operasi Baris Elementer (OBE) untuk membuat elemen di bawah diagonal utama menjadi nol.
-
-3. Substitusi Mundur
-Setelah terbentuk matriks segitiga atas, gunakan substitusi mundur untuk mendapatkan nilai variabel.
-
 Contoh soal:
 Selesaikan dengan menggunakan Eliminasi Gauss.
 $$
