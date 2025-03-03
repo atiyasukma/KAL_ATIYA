@@ -32,6 +32,7 @@ Contoh soal:
 
 Selesaikan dengan menggunakan Eliminasi Gauss.
 
+
 $$
 \begin{array}{cc}
 x_1+2x_2+3x_3z&=6\\
@@ -40,7 +41,9 @@ x_3-x_24&=2
 \end{array}
 $$
 
+
 ### Soal 1
+
 Selesaikan dengan menggunakan eliminasi Gauss
 
 
@@ -51,6 +54,7 @@ x_1+2x_2+3x_3&=6\\
 x_2+x_3&=2
 \end{array}
 $$
+
 
 jawab:
 
@@ -116,6 +120,7 @@ jadi hanya ada satu variabel maka sistem memiliki tak hingga banyak solusi.
 
 ### Soal 2
 Selesaikan dengan menggunakan eliminasi Gauss.
+
 
 $$
 \begin{array}{cc}
@@ -189,6 +194,7 @@ jadi, sistem ini memiliki solusi tunggal.
 
 ### Soal 3
 Selesaikan dengan menggunakan eliminasi Gauss.
+
 
 $$
 \begin{array}{cc}
