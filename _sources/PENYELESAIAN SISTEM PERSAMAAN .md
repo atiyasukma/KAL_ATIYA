@@ -29,10 +29,7 @@ liminasi Gauss mengubah persamaan linear menjadi bentuk matriks, kemudian diubah
 Setelah terbentuk matriks segitiga atas, gunakan substitusi mundur untuk mendapatkan nilai variabel.
 
 Contoh soal:
-
 Selesaikan dengan menggunakan Eliminasi Gauss.
-
-
 $$
 \begin{array}{cc}
 x_1+2x_2+3x_3z&=6\\
@@ -41,12 +38,8 @@ x_3-x_24&=2
 \end{array}
 $$
 
-
 ### Soal 1
-
 Selesaikan dengan menggunakan eliminasi Gauss
-
-
 $$
 \begin{array}{cc}
 x_1+2x_2+3x_3&=6\\
@@ -54,11 +47,7 @@ x_1+2x_2+3x_3&=6\\
 x_2+x_3&=2
 \end{array}
 $$
-
-
 jawab:
-
-
 $$
 \begin{bmatrix}
 1 & 2 & 3 & | &6\\
@@ -84,21 +73,18 @@ $$
 \end{bmatrix}
 \quad
 $$
-
 $$
 \begin{array}{cc}
 x_2+x_3 = 2\\
 x_2 = 2 - x_3\\
 \end{array}
 $$
-
 $$
 \begin{array}{cc}
 x_1+2x_2+3x_3 = 6\\
 x_2 = 2 - x_3 \\
 \end{array}
 $$
-
 $$
 \begin{array}{cc}
 x_1 + 2(2-x_3)+3x_3 = 6\\
@@ -107,7 +93,6 @@ x_1+4+x_3\\
 x_1=2-x_3
 \end{array}
 $$
-
 $$
 \begin{array}{cc}
 x_1 = 2-x_3\\
@@ -116,12 +101,8 @@ x_3=x_3
 \end{array}
 $$
 
-jadi hanya ada satu variabel maka sistem memiliki tak hingga banyak solusi.
-
 ### Soal 2
 Selesaikan dengan menggunakan eliminasi Gauss.
-
-
 $$
 \begin{array}{cc}
 x_1+x_2+x_3&=3\\
@@ -129,9 +110,7 @@ x_1+x_2+x_3&=3\\
 x_1+2x_2&=3
 \end{array}
 $$
-
 jawab: 
-
 $$
 \begin{bmatrix}
 1 & 1 & 1 & | &3\\
@@ -140,7 +119,6 @@ $$
 \end{bmatrix}
 \quad
 $$
-
 $$
 \begin{bmatrix}
 1 & 1 & 1 & | &3\\
@@ -149,7 +127,6 @@ $$
 \end{bmatrix}
 \quad
 $$
-
 $$
 \begin{bmatrix}
 1 & 1 & 1 & | &3\\
@@ -158,21 +135,18 @@ $$
 \end{bmatrix}
 \quad
 $$
-
 $$
 \begin{array}{cc}
 -x_3=-1/2\\
 x_3=1/2
 \end{array}
 $$
-
 $$
 \begin{array}{cc}
 -2x_2=-1\\
 x_2=1/2
 \end{array}
 $$
-
 $$
 \begin{array}{cc}
 x_1+x_2+x_3=3\\
@@ -181,30 +155,22 @@ x_1+1=3\\
 x_1=2
 \end{array}
 $$
-
 hasil akhirnya adalah:
-
 $$
 \begin{array}{cc}
 (x_1+x_2+x_3)=(2,1/2,1/2)
 \end{array}
 $$
 
-jadi, sistem ini memiliki solusi tunggal.
-
 ### Soal 3
 Selesaikan dengan menggunakan eliminasi Gauss.
-
-
 $$
 \begin{array}{cc}
 2x_1+2x_2&=4\\
 x_1+x_2&=2
 \end{array}
 $$
-
 jawab:
-
 $$
 \begin{bmatrix}
 2 & 2 &  | &4\\
@@ -212,7 +178,6 @@ $$
 \end{bmatrix}
 \quad
 $$
-
 $$
 \begin{bmatrix}
 1 & 1 &  | &2\\
@@ -220,7 +185,6 @@ $$
 \end{bmatrix}
 \quad
 $$
-
 $$
 \begin{array}{cc}
 x_1+x_2=2\\
@@ -228,13 +192,11 @@ x_1=2-x_2\\
 x_2=x_2
 \end{array}
 $$
-
 $$
 \begin{array}{cc}
 (x_1,x_2)=(2-x_2,x_2)
 \end{array}
 $$
-
 $$
 \begin{array}{cc}
 jika(x_2=0),maka((x_1,x_2)=(2,0))\\
@@ -243,20 +205,16 @@ jika(x_2=2),maka((x_1,x_2)=(0,2))
 \end{array}
 $$
 
-maka sistem ini memiliki tak hingga banyak solusi.
 
 ### Soal 4
 Selesaikan dengan menggunakan eliminasi Gauss.
-
 $$
 \begin{array}{cc}
 x_1+x_2&=5\\
 x_1+2x_3&=6
 \end{array}
 $$
-
 jawab:
-
 $$
 \begin{bmatrix}
 1 & 1 &| &5\\
@@ -264,7 +222,6 @@ $$
 \end{bmatrix}
 \quad
 $$
-
 $$
 \begin{bmatrix}
 1 & 1 &| &5\\
@@ -272,7 +229,6 @@ $$
 \end{bmatrix}
 \quad
 $$
-
 $$
 \begin{array}{cc}
 x_2=1\\
@@ -280,13 +236,9 @@ x_1+1=5\\
 x_1=4
 \end{array}
 $$
-
 jadi:
-
 $$
 \begin{array}{cc}
 (x_1,x_2)=(4,1)
 \end{array}
 $$
-
-maka, sistem ini memiliki solusi tunggal.
