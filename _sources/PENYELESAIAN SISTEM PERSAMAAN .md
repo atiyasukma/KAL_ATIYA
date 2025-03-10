@@ -205,7 +205,6 @@ jika(x_2=2),maka((x_1,x_2)=(0,2))
 \end{array}
 $$
 
-
 ### Soal 4
 Selesaikan dengan menggunakan eliminasi Gauss.
 $$
