@@ -376,6 +376,15 @@
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#selesaikan-dengan-menggunakan-invers-matriks-kemudian-invers-dicari-menggunakan-obe">Selesaikan dengan menggunakan invers matriks, kemudian invers dicari menggunakan OBE</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#determinan-matriks">Determinan matriks</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#minor-matriks">Minor Matriks</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#kofaktor-matriks">Kofaktor Matriks</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#hubungan-matriks-minor-kofaktor">Hubungan Matriks Minor &amp; Kofaktor</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mencari-determinan-dengan-konsep-minor-dan-kofactor-matriks-contoh-matriks-3x3-4x4-dan-5x5">Mencari Determinan Dengan Konsep Minor dan Kofactor Matriks. Contoh Matriks 3x3 4x4 dan 5x5</a></li>
 </ul>
             </nav>
         </div>
@@ -721,154 +730,133 @@ Hasil perkalian skalar dengan matriks:
 <h2>SOAL<a class="headerlink" href="#soal" title="Link to this heading">#</a></h2>
 <section id="selesaikan-dengan-menggunakan-invers-matriks-kemudian-invers-dicari-menggunakan-obe">
 <h3>Selesaikan dengan menggunakan invers matriks, kemudian invers dicari menggunakan OBE<a class="headerlink" href="#selesaikan-dengan-menggunakan-invers-matriks-kemudian-invers-dicari-menggunakan-obe" title="Link to this heading">#</a></h3>
+<p>\begin{aligned}
+-7x_1 - 6x_2 - 12x_3 &amp;= -33 \
+5x_1 + 5x_2 + 7x_3 &amp;= 24 \
+x_1 + 4x_3 &amp;= 5
+\end{aligned}</p>
+<ul class="simple">
+<li><p>Tuliskan dalam bentuk matriks</p></li>
+</ul>
 <div class="math notranslate nohighlight">
-\[\begin{split}
--7x_1-6x_2-12x_3=-33\\
-5x_1+5x_2+7x_3=24\\
-x_1+4x_3=5
-\end{split}\]</div>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Penyelesaian:
-</pre></div>
-</div>
-<ol class="arabic simple">
-<li><p>Tulis dalam bentuk matrik</p></li>
-</ol>
-<div class="math notranslate nohighlight">
-\[Ax=b\]</div>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-\begin{equation*}
-A=
-\begin{bmatrix}
--7&amp;-6&amp;-12\\
-5&amp;5&amp;7\\
-1&amp;0&amp;4
-\end{bmatrix}
-b=
-\begin{bmatrix}
--33\\
-24\\
+\[
+Ax = b
+\]</div>
+<p><span class="math notranslate nohighlight">\(
+A =
+\)</span></p>
+<p>\begin{bmatrix}
+-7 &amp; -6 &amp; -12 \
+5 &amp; 5 &amp; 7 \
+1 &amp; 0 &amp; 4
+\end{bmatrix}</p>
+<p><span class="math notranslate nohighlight">\(
+b =
+\)</span></p>
+<p>\begin{bmatrix}
+-33 \
+24 \
 5
-\end{bmatrix}
-\end{equation*}
-\end{split}\]</div>
-<ol class="arabic simple" start="2">
-<li><p>menyusun matrik argumen, menubah bagian kiri menjadi matrtik I segingga bagian kanan berubah menjdi A invers.</p></li>
-</ol>
+\end{bmatrix}</p>
+<ul class="simple">
+<li><p>Menyusun matriks argumen, merubah bagian kiri menjadi matriks I sehingga bagian kanan berubah menjadi A invers.</p></li>
+</ul>
 <div class="math notranslate nohighlight">
-\[[A][I]\]</div>
+\[
+[A | I]
+\]</div>
+<p>\begin{bmatrix}
+-7 &amp; -6 &amp; -12 &amp; | 1 &amp; 0 &amp; 0 \
+5 &amp; 5 &amp; 7 &amp; | 0 &amp; 1 &amp; 0 \
+1 &amp; 0 &amp; 4 &amp; | 0 &amp; 0 &amp; 1
+\end{bmatrix}</p>
+<ul class="simple">
+<li><p>Bagi baris pertama dengan -7, agar elemen (1,1) menjadi 1</p></li>
+</ul>
+<p>\begin{bmatrix}
+1 &amp; \frac{6}{7} &amp; -\frac{12}{7} &amp; \big| &amp; -\frac{1}{7} &amp; 0 &amp; 0 \
+5 &amp; 5 &amp; 7 &amp; \big| &amp; 0 &amp; 1 &amp; 0 \
+1 &amp; 0 &amp; 4 &amp; \big| &amp; 0 &amp; 0 &amp; 1
+\end{bmatrix}</p>
+<ul class="simple">
+<li><p>Nol kan elemen di bawahnya menggunakan operasi:</p></li>
+</ul>
 <div class="math notranslate nohighlight">
-\[\begin{split}
-\begin{equation*}
-\begin{bmatrix}
--7&amp;-6&amp;-12 |1&amp;0&amp;0\\
-5&amp;5&amp;7 |0&amp;1&amp;0\\
-1&amp;0&amp;4 |0&amp;0&amp;1
-\end{bmatrix}
-\end{equation*}
-\end{split}\]</div>
-<ol class="arabic simple" start="3">
-<li><p>bagi baris pertama dengan -7, agar elemen (1,1) menjadi 1</p></li>
-</ol>
+\[
+R_2 \leftarrow R_2 - 5R_1
+\]</div>
 <div class="math notranslate nohighlight">
-\[\begin{split}
-\begin{equation*}
-\begin{bmatrix}
-1&amp;\frac{6}{7}&amp;-\frac{12}{7} |-\frac{1}{7}&amp;0&amp;0\\
-5&amp;5&amp;7 |0&amp;1&amp;0\\
-1&amp;0&amp;4 |0&amp;0&amp;1
-\end{bmatrix}
-\end{equation*}
-\end{split}\]</div>
-<ol class="arabic simple" start="4">
-<li><p>nol kan elemen di bawahnya menggunakan operasi:</p></li>
-</ol>
+\[
+R_3 \leftarrow R_3 - R_1
+\]</div>
+<p>\begin{bmatrix}
+1 &amp; \frac{6}{7} &amp; -\frac{12}{7} &amp; \big| &amp; -\frac{1}{7} &amp; 0 &amp; 0 \
+0 &amp; \frac{5}{7} &amp; -\frac{13}{7} &amp; \big| &amp; \frac{5}{7} &amp; 1 &amp; 0 \
+0 &amp; -\frac{6}{7} &amp; \frac{16}{7} &amp; \big| &amp; \frac{1}{7} &amp; 0 &amp; 1
+\end{bmatrix}</p>
+<ul class="simple">
+<li><p>Ubah elemen (2,2) menjadi 1, dengan cara baris kedua di bagi 5/7</p></li>
+</ul>
 <div class="math notranslate nohighlight">
-\[R_2 &lt;-R_2-5R_1\]</div>
+\[
+R_2 \leftarrow R_2 \times \frac{7}{5}
+\]</div>
+<p>\begin{bmatrix}
+1 &amp; \frac{6}{7} &amp; -\frac{12}{7} &amp; \big| &amp; -\frac{1}{7} &amp; 0 &amp; 0 \
+0 &amp; 1 &amp; -\frac{13}{5} &amp; \big| &amp; 1 &amp; \frac{7}{5} &amp; 0 \
+0 &amp; -\frac{6}{7} &amp; \frac{16}{7} &amp; \big| &amp; \frac{1}{7} &amp; 0 &amp; 1
+\end{bmatrix}</p>
+<ul class="simple">
+<li><p>Nol kan elemen di atas dan bawah (2,2) menggunakan operasi:</p></li>
+</ul>
 <div class="math notranslate nohighlight">
-\[R_3 &lt;-R_3-R_1\]</div>
+\[
+R_1 \leftarrow R_1 - \frac{6}{7} R_2
+\]</div>
 <div class="math notranslate nohighlight">
-\[\begin{split}
-\begin{equation*}
-\begin{bmatrix}
-1&amp;\frac{6}{7}&amp;-\frac{12}{7} |-\frac{1}{7}&amp;0&amp;0\\
-0&amp;\frac{5}{7}&amp;-\frac{13}{7}|\frac{5}{7}&amp;1&amp;0\\
-0&amp;-\frac{6}{7}&amp;\frac{16}{7} |\frac{1}{7}&amp;0&amp;1
-\end{bmatrix}
-\end{equation*}
-\end{split}\]</div>
-<ol class="arabic simple" start="5">
-<li><p>ubah elemen (2,2) menjadi 1, dengan cara baris kedua di bagi 5/7</p></li>
-</ol>
+\[
+R_3 \leftarrow R_3 - \frac{6}{7} R_2
+\]</div>
+<p>\begin{bmatrix}
+1 &amp; 0 &amp; \frac{102}{35} &amp; -\frac{13}{35} &amp; \big| &amp; -\frac{6}{5} &amp; 0 \
+0 &amp; 1 &amp; -\frac{13}{5} &amp; \frac{1}{5} &amp; \big| &amp; 1 &amp; \frac{7}{5} &amp; 0 \
+0 &amp; 0 &amp; \frac{26}{35} &amp; \frac{13}{26} &amp; \big| &amp; \frac{42}{26} &amp; 0 &amp; 1
+\end{bmatrix}</p>
+<ul class="simple">
+<li><p>Ubah elemen (3,3) menjadi 1, dengan cara baris ketiga dibagi dengan 26/35</p></li>
+</ul>
 <div class="math notranslate nohighlight">
-\[R_2 &lt;-R_2 \times \frac{7}{5}\]</div>
+\[
+R_3 \leftarrow R_3 \times \frac{35}{26}
+\]</div>
+<p>\begin{bmatrix}
+1 &amp; 0 &amp; \frac{102}{35} &amp; -\frac{13}{35} &amp; \big| &amp; -\frac{6}{5} &amp; 0 \
+0 &amp; 1 &amp; -\frac{13}{5} &amp; \frac{1}{5} &amp; \big| &amp; 1 &amp; \frac{7}{5} &amp; 0 \
+0 &amp; 0 &amp; 1 &amp; \frac{13}{26} &amp; \big| &amp; \frac{42}{26} &amp; \frac{35}{26} &amp; 1
+\end{bmatrix}</p>
+<ul class="simple">
+<li><p>Nol kan elemen diatas (3,3)</p></li>
+</ul>
 <div class="math notranslate nohighlight">
-\[\begin{split}
-\begin{equation*}
-\begin{bmatrix}
-1&amp;\frac{6}{7}&amp;-\frac{12}{7} |-\frac{1}{7}&amp;0&amp;0\\
-0&amp;1&amp;-\frac{13}{5}|\frac{1}{5}&amp;\frac{7}{5}&amp;0\\
-0&amp;-\frac{6}{7}&amp;\frac{16}{7} |\frac{1}{7}&amp;0&amp;1
-\end{bmatrix}
-\end{equation*}
-\end{split}\]</div>
-<ol class="arabic simple" start="6">
-<li><p>nol kan elemen di atas dan bawah (2,2)
-menggunakan operasi:</p></li>
-</ol>
-<div class="math notranslate nohighlight">
-\[R_1&lt;-R_1-\frac{6}{7}R_2\]</div>
-<div class="math notranslate nohighlight">
-\[R_3&lt;-R_3-\frac{6}{7}R_2\]</div>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-\begin{equation*}
-\begin{bmatrix}
-1 &amp; 0 &amp; \frac{102}{35}|&amp; -\frac{13}{35} &amp; -\frac{6}{5} &amp; 0 \\
-0 &amp; 1 &amp; -\frac{13}{5} &amp;|\frac{1}{5} &amp; \frac{7}{5} &amp; 0 \\
-0 &amp; 0 &amp; \frac{26}{35} &amp;|\frac{13}{26} &amp; \frac{42}{26} &amp; 1
-\end{bmatrix}
-\end{equation*}
-\end{split}\]</div>
-<ol class="arabic simple" start="7">
-<li><p>ubah elemen (3,3) menjadi 1, dengan cara baris ketiga dibagi dengan 26/35</p></li>
-</ol>
-<div class="math notranslate nohighlight">
-\[R_3&lt;-R_3 × \frac{35}{26}\]</div>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-\begin{equation*}
-\begin{bmatrix}
-1 &amp; 0 &amp; \frac{102}{35}|&amp; -\frac{13}{35} &amp; -\frac{6}{5} &amp; 0 \\
-0 &amp; 1 &amp; -\frac{13}{5} &amp;|\frac{1}{5} &amp; \frac{7}{5} &amp; 0 \\
-0 &amp; 0 &amp; 1 &amp;|\frac{13}{26} &amp; \frac{42}{26} &amp; \frac{35}{26}
-\end{bmatrix}
-\end{equation*}
-\end{split}\]</div>
-<ol class="arabic simple" start="8">
-<li><p>nol kan elemen diatas (3,3)</p></li>
-</ol>
-<div class="math notranslate nohighlight">
-\[R_1 &lt;-R_1-\frac{102}{35}R_3\]</div>
-<div class="math notranslate nohighlight">
-\[R_2 &lt;-R_2+\frac{13}{5}R_3\]</div>
-<p>dipeoleh inversnya yaitu:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-\begin{equation*}
+\[
+R_1 \leftarrow R_1 - \frac{102}{35} R_3
+\]</div>
+<p>diperoleh inversnya yaitu:</p>
+<p><span class="math notranslate nohighlight">\(
 A^{-1} =
-\begin{bmatrix}
-\frac{26}{35} &amp; \frac{102}{65} &amp; \frac{102}{91} \\
--\frac{7}{5} &amp; \frac{13}{5} &amp; -\frac{35}{26} \\
+\)</span></p>
+<p>\begin{bmatrix}
+\frac{26}{35} &amp; \frac{102}{65} &amp; \frac{102}{91} \
+-\frac{7}{5} &amp; \frac{13}{5} &amp; -\frac{35}{26} \
 -\frac{13}{26} &amp; -\frac{42}{26} &amp; \frac{35}{26}
-\end{bmatrix}
-\end{equation*}
-\end{split}\]</div>
+\end{bmatrix}</p>
 <ol class="arabic simple" start="9">
-<li><p>kalikan A invers dengan b</p></li>
+<li><p>Kalikan A invers dengan b</p></li>
 </ol>
 <div class="math notranslate nohighlight">
-\[x=A^{-}1b\]</div>
+\[
+x = A^{-1} b
+\]</div>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 \begin{equation*}
@@ -889,10 +877,359 @@ x_3
 \end{bmatrix}
 \end{equation*}
 \end{split}\]</div>
-<p>hasil akhirnya adalah</p>
+<p>Hasil akhirnya adalah</p>
 <div class="math notranslate nohighlight">
-\[x_1=-1, x_2=4, x_3=2\]</div>
+\[
+x_1 = -1, \quad x_2 = 4, \quad x_3 = 2
+\]</div>
 </section>
+</section>
+<section id="determinan-matriks">
+<h2>Determinan matriks<a class="headerlink" href="#determinan-matriks" title="Link to this heading">#</a></h2>
+<p>Merupakan suatu nilai skalar yang dapat dihitung dari elemen-elemen suatu matriks persegi yang biasanya matriks dengan jumlah baris dan kolom yang sama.
+digunakan untuk mementukan apakah suatu matriks memiliki invers (det (A)=/ 0).</p>
+<ul class="simple">
+<li><p>sifat sifat penting determinan</p></li>
+</ul>
+<ol class="arabic simple">
+<li><p>Determinan Matriks identitas:
+det(I)=1, dimana I adalah matriks identitas</p></li>
+<li><p>Baris atau kolom nol:
+Jika ada baris atau kolom yang semuanya nol, maka det(A)=0</p></li>
+<li><p>pertukaran baris/kolom;
+Jika dua baris atau kolom dipertukarkan, determinan berubah tanda</p></li>
+<li><p>Kelipatan baris/kolom:
+Jika satu baris atau kolom dikalikan dengan skalar k, maka determinan menjadi k det (A)</p></li>
+<li><p>matriks singular:
+Jika det(A)=0, maka matriks A disebut singular(Tidak memiliki invers) jika non singular maka matriks nya buka 0, tapi -1 memiliki invers (sebalik nya dari matriks singular)</p></li>
+</ol>
+<ul class="simple">
+<li><p>contoh matriks 2x2:
+$<span class="math notranslate nohighlight">\(
+\begin{bmatrix}
+&amp; a &amp; b &amp;  \\
+&amp; c &amp; d &amp; \\
+\end{bmatrix}
+\quad
+\)</span>$</p></li>
+</ul>
+<p>maka determinannya adalah:
+det(A) = ad−bc</p>
+<ul class="simple">
+<li><p>contoh matriks 3x3:
+$<span class="math notranslate nohighlight">\(
+\begin{bmatrix}
+&amp; a &amp; b &amp; c &amp; \\
+&amp; d &amp; e &amp; f &amp; \\
+&amp; g &amp; h &amp; i &amp; \\
+\end{bmatrix}
+\quad
+\)</span>$</p></li>
+</ul>
+<p>maka determinannya adalah:
+det(A) = a(ei−fh)−b(di−fg)+c(dh−eg)</p>
+<section id="minor-matriks">
+<h3>Minor Matriks<a class="headerlink" href="#minor-matriks" title="Link to this heading">#</a></h3>
+<p>Merupakan bagian matriks yang tersisa setelah menghilangkan baris dan kolom yang berisi elemen tertentu.</p>
+<ul class="simple">
+<li><p>contoh matriks 3x3:</p></li>
+</ul>
+<p>A =
+$<span class="math notranslate nohighlight">\(
+\begin{bmatrix}
+&amp; 1 &amp; 2 &amp; 3 &amp;\\
+&amp; 4 &amp; 5 &amp; 6 &amp;\\
+&amp; 7 &amp; 8 &amp; 9 &amp;\\
+\end{bmatrix}
+\quad
+\)</span><span class="math notranslate nohighlight">\(
+Minor untuk elemen A \)</span>M_{23}$ = 6</p>
+<p><span class="math notranslate nohighlight">\(M_{23}\)</span>:
+$<span class="math notranslate nohighlight">\(
+\begin{bmatrix}
+&amp; 1 &amp; 2 &amp;  \\
+&amp; 7 &amp; 8 &amp; \\
+\end{bmatrix}
+\quad
+\)</span><span class="math notranslate nohighlight">\(
+\)</span>M_{23}$ ​= (1×8)−(2×7) = 8−14 = −6</p>
+</section>
+<section id="kofaktor-matriks">
+<h3>Kofaktor Matriks<a class="headerlink" href="#kofaktor-matriks" title="Link to this heading">#</a></h3>
+<p>Merupakan kofaktor dari suatu elemen dalam matriks adalah minor dari elemen tersebut yang dikalikan dengan faktor tanda berdasarkan posisinya dalam matriks.</p>
+<ul class="simple">
+<li><p>Rumus Kofaktor
+$<span class="math notranslate nohighlight">\(
+C_{ij} = (-1)^{i+j} M_{ij}
+\)</span>$</p></li>
+<li><p>contoh matriks 3x3:</p></li>
+<li><p>menentukan minor</p></li>
+</ul>
+<p>A =
+$<span class="math notranslate nohighlight">\(
+\begin{bmatrix}
+&amp; 1 &amp; 2 &amp; 3 &amp;\\
+&amp; 4 &amp; 5 &amp; 6 &amp;\\
+&amp; 7 &amp; 8 &amp; 9 &amp;\\
+\end{bmatrix}
+\quad
+\)</span><span class="math notranslate nohighlight">\(
+Minor untuk elemen \)</span>A_{23}$ = 6</p>
+<p><span class="math notranslate nohighlight">\(
+M_{23}:
+\)</span>
+$<span class="math notranslate nohighlight">\(
+\begin{bmatrix}
+&amp; 1 &amp; 2 &amp;  \\
+&amp; 7 &amp; 8 &amp; \\
+\end{bmatrix}
+\quad
+\)</span><span class="math notranslate nohighlight">\(
+\)</span>M_{23}$ ​= (1×8)−(2×7) = 8−14 = −6</p>
+<ul class="simple">
+<li><p>lalu masukkan rumus kofaktor
+$<span class="math notranslate nohighlight">\(
+C_{ij} = (-1)^{i+j} M_{ij}
+\)</span>$</p></li>
+<li><p>masukkan angka
+$<span class="math notranslate nohighlight">\(
+C_{23} = (-1)^{2+3} (-6)
+\)</span>$</p></li>
+<li><p>Karena 2+3 = 5, maka <span class="math notranslate nohighlight">\((−1)^{5}\)</span> = −1, sehingga:
+$<span class="math notranslate nohighlight">\(
+C_{23} = (-1) × (-6) = 6
+\)</span>$</p></li>
+</ul>
+<section id="hubungan-matriks-minor-kofaktor">
+<h4>Hubungan Matriks Minor &amp; Kofaktor<a class="headerlink" href="#hubungan-matriks-minor-kofaktor" title="Link to this heading">#</a></h4>
+<ul class="simple">
+<li><p>Minor <span class="math notranslate nohighlight">\((M_{ij})\)</span> adalah determinan dari submatriks yang diperoleh dengan menghapus baris ke-i dan kolom ke-j.</p></li>
+<li><p>Kofaktor <span class="math notranslate nohighlight">\((C_{ij})\)</span> adalah minor yang dikalikan dengan faktor tanda <span class="math notranslate nohighlight">\((−1)^{i+j}\)</span> dan digunakan dalam perhitungan determinan, invers matriks, serta ekspansi kofaktor.</p></li>
+</ul>
+</section>
+</section>
+</section>
+<section id="mencari-determinan-dengan-konsep-minor-dan-kofactor-matriks-contoh-matriks-3x3-4x4-dan-5x5">
+<h2>Mencari Determinan Dengan Konsep Minor dan Kofactor Matriks. Contoh Matriks 3x3 4x4 dan 5x5<a class="headerlink" href="#mencari-determinan-dengan-konsep-minor-dan-kofactor-matriks-contoh-matriks-3x3-4x4-dan-5x5" title="Link to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>contoh matriks 3x3 dengan konsep minor dan kofaktor sudah ada diatas.</p></li>
+<li><p>contoh matriks 4x4:</p></li>
+</ol>
+<p>A =
+$<span class="math notranslate nohighlight">\(
+\begin{bmatrix}
+&amp; 2 &amp; 3 &amp; 1 &amp; 5 &amp;\\
+&amp; 4 &amp; 6 &amp; 2 &amp; 8 &amp;\\
+&amp; 3 &amp; 1 &amp; 7 &amp; 4 &amp;\\
+&amp; 9 &amp; 2 &amp; 6 &amp; 3 &amp;\\
+\end{bmatrix}
+\quad
+\)</span>$</p>
+<ul class="simple">
+<li><p>Minor dan Kofaktor <span class="math notranslate nohighlight">\(C_{11}\)</span></p></li>
+</ul>
+<p><span class="math notranslate nohighlight">\(M_{11}\)</span> =
+$<span class="math notranslate nohighlight">\(
+\begin{bmatrix}
+&amp; 6 &amp; 2 &amp; 8 &amp;\\
+&amp; 1 &amp; 7 &amp; 4 &amp;\\
+&amp; 2 &amp; 6 &amp; 3 &amp;\\
+\end{bmatrix}
+\quad
+\)</span>$</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\det(M_{11}) = 6
+\begin{vmatrix}
+7 &amp; 4 \\
+6 &amp; 3
+\end{vmatrix}
+- 2
+\begin{vmatrix}
+1 &amp; 4 \\
+2 &amp; 3
+\end{vmatrix}
++ 8
+\begin{vmatrix}
+1 &amp; 7 \\
+2 &amp; 6
+\end{vmatrix}
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\displaystyle
+\begin{aligned}
+&amp;= 6(7 \times 3 - 4 \times 6) - 2(1 \times 3 - 4 \times 2) + 8(1 \times 6 - 7 \times 2) \\
+&amp;= 6(21 - 24) - 2(3 - 8) + 8(6 - 14) \\
+&amp;= 6(-3) - 2(-5) + 8(-8) \\
+&amp;= -18 + 10 - 64 = -72
+\end{aligned}
+\end{split}\]</div>
+<p>dengan hasil:</p>
+<p><span class="math notranslate nohighlight">\(C_{11}\)</span> ​= <span class="math notranslate nohighlight">\((−1)^{1+1}\)</span><span class="math notranslate nohighlight">\(M_{11}\)</span> ​=  1(−72) = −72</p>
+<ul class="simple">
+<li><p>Minor dan Kofaktor <span class="math notranslate nohighlight">\(C_{12}\)</span></p></li>
+</ul>
+<p><span class="math notranslate nohighlight">\(M_{12}\)</span> =
+$<span class="math notranslate nohighlight">\(
+\begin{bmatrix}
+&amp; 4 &amp; 2 &amp; 8 &amp;\\
+&amp; 3 &amp; 7 &amp; 4 &amp;\\
+&amp; 9 &amp; 6 &amp; 3 &amp;\\
+\end{bmatrix}
+\quad
+\)</span>$</p>
+<ul class="simple">
+<li><p>hasilnya: <span class="math notranslate nohighlight">\(M_{12}\)</span>=24</p></li>
+<li><p>kofaktor:
+<span class="math notranslate nohighlight">\(C_{12}\)</span>​ = <span class="math notranslate nohighlight">\((−1)^{1+2}\)</span><span class="math notranslate nohighlight">\(M_{12}\)</span> ​= (-1)(24)=-24</p></li>
+<li><p>Minor dan Kofaktor <span class="math notranslate nohighlight">\(C_{13}\)</span></p></li>
+</ul>
+<p><span class="math notranslate nohighlight">\(M_{13}\)</span> =
+$<span class="math notranslate nohighlight">\(
+\begin{bmatrix}
+&amp; 4 &amp; 6 &amp; 8 &amp;\\
+&amp; 3 &amp; 1 &amp; 4 &amp;\\
+&amp; 9 &amp; 2 &amp; 3 &amp;\\
+\end{bmatrix}
+\quad
+\)</span>$</p>
+<ul class="simple">
+<li><p>hasilnya: <span class="math notranslate nohighlight">\(M_{13}\)</span>=15</p></li>
+<li><p>kofaktor:
+<span class="math notranslate nohighlight">\(C_{13}\)</span>​ = <span class="math notranslate nohighlight">\((−1)^{1+3}\)</span><span class="math notranslate nohighlight">\(M_{13}\)</span> ​= (1)(15)=15</p></li>
+<li><p>Minor dan Kofaktor <span class="math notranslate nohighlight">\(C_{14}\)</span></p></li>
+</ul>
+<p><span class="math notranslate nohighlight">\(M_{14}\)</span> =
+$<span class="math notranslate nohighlight">\(
+\begin{bmatrix}
+&amp; 4 &amp; 6 &amp; 2 &amp;\\
+&amp; 3 &amp; 1 &amp; 7 &amp;\\
+&amp; 9 &amp; 2 &amp; 6 &amp;\\
+\end{bmatrix}
+\quad
+\)</span>$</p>
+<ul class="simple">
+<li><p>hasilnya: <span class="math notranslate nohighlight">\(M_{14}\)</span>= -30</p></li>
+<li><p>kofaktor:
+<span class="math notranslate nohighlight">\(C_{14}\)</span>​ = <span class="math notranslate nohighlight">\((−1)^{1+4}\)</span><span class="math notranslate nohighlight">\(M_{14}\)</span> ​= (1)(-30)=−30</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\displaystyle
+\begin{aligned}
+detA
+&amp;= 2(-72) + 3(-24) + 1(15) + 5(-30) \\
+&amp;= -144 - 72 + 15 - 150 \\
+&amp;= -351
+\end{aligned}
+\end{split}\]</div>
+<ol class="arabic simple" start="3">
+<li><p>matriks 5x5:</p></li>
+</ol>
+<p>A =
+$<span class="math notranslate nohighlight">\(
+\begin{bmatrix}
+&amp; 1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 &amp;\\
+&amp; 2 &amp; 3 &amp; 4 &amp; 5 &amp; 1 &amp;\\
+&amp; 3 &amp; 4 &amp; 5 &amp; 1 &amp; 2 &amp;\\
+&amp; 4 &amp; 5 &amp; 1 &amp; 2 &amp; 3 &amp;\\
+&amp; 5 &amp; 1 &amp; 2 &amp; 3 &amp; 4 &amp;\\
+\end{bmatrix}
+\quad
+\)</span>$</p>
+<ul class="simple">
+<li><p>Minor dan Kofaktor <span class="math notranslate nohighlight">\(C_{11}\)</span></p></li>
+</ul>
+<p><span class="math notranslate nohighlight">\(M_{11}\)</span> =
+$<span class="math notranslate nohighlight">\(
+\begin{bmatrix}
+&amp; 3 &amp; 4 &amp; 5 &amp; 1 &amp;\\
+&amp; 4 &amp; 5 &amp; 1 &amp; 2 &amp;\\
+&amp; 5 &amp; 1 &amp; 2 &amp; 3 &amp;\\
+&amp; 1 &amp; 2 &amp; 3 &amp; 4 &amp;\\
+\end{bmatrix}
+\quad
+\)</span>$</p>
+<ul class="simple">
+<li><p>hasilnya: <span class="math notranslate nohighlight">\(M_{11}\)</span>=-24</p></li>
+<li><p>kofaktor:
+<span class="math notranslate nohighlight">\(C_{11}\)</span>​ = <span class="math notranslate nohighlight">\((−1)^{1+1}\)</span><span class="math notranslate nohighlight">\(M_{11}\)</span> ​= 1(-24)=-24</p></li>
+<li><p>Minor dan Kofaktor <span class="math notranslate nohighlight">\(C_{12}\)</span></p></li>
+</ul>
+<p><span class="math notranslate nohighlight">\(M_{12}\)</span> =
+$<span class="math notranslate nohighlight">\(
+\begin{bmatrix}
+&amp; 2 &amp; 4 &amp; 5 &amp; 1 &amp;\\
+&amp; 3 &amp; 5 &amp; 1 &amp; 2 &amp;\\
+&amp; 4 &amp; 1 &amp; 2 &amp; 3 &amp;\\
+&amp; 5 &amp; 2 &amp; 3 &amp; 4 &amp;\\
+\end{bmatrix}
+\quad
+\)</span>$</p>
+<ul class="simple">
+<li><p>hasilnya: <span class="math notranslate nohighlight">\(M_{12}\)</span>=18</p></li>
+<li><p>kofaktor:
+<span class="math notranslate nohighlight">\(C_{12}\)</span>​ = <span class="math notranslate nohighlight">\((−1)^{1+2}\)</span><span class="math notranslate nohighlight">\(M_{12}\)</span> ​= (-1)(18)=-18</p></li>
+<li><p>Minor dan Kofaktor <span class="math notranslate nohighlight">\(C_{13}\)</span></p></li>
+</ul>
+<p><span class="math notranslate nohighlight">\(M_{13}\)</span> =
+$<span class="math notranslate nohighlight">\(
+\begin{bmatrix}
+&amp; 2 &amp; 3 &amp; 5 &amp; 1 &amp;\\
+&amp; 3 &amp; 4 &amp; 1 &amp; 2 &amp;\\
+&amp; 4 &amp; 5 &amp; 2 &amp; 3 &amp;\\
+&amp; 5 &amp; 1 &amp; 3 &amp; 4 &amp;\\
+\end{bmatrix}
+\quad
+\)</span>$</p>
+<ul class="simple">
+<li><p>hasilnya: <span class="math notranslate nohighlight">\(M_{13}\)</span>=12</p></li>
+<li><p>kofaktor:
+<span class="math notranslate nohighlight">\(C_{13}\)</span>​ = <span class="math notranslate nohighlight">\((−1)^{1+3}\)</span><span class="math notranslate nohighlight">\(M_{13}\)</span> ​= (1)(12)=12</p></li>
+<li><p>Minor dan Kofaktor <span class="math notranslate nohighlight">\(C_{14}\)</span></p></li>
+</ul>
+<p><span class="math notranslate nohighlight">\(M_{14}\)</span> =
+$<span class="math notranslate nohighlight">\(
+\begin{bmatrix}
+&amp; 2 &amp; 3 &amp; 4 &amp; 1 &amp;\\
+&amp; 3 &amp; 4 &amp; 5 &amp; 2 &amp;\\
+&amp; 4 &amp; 5 &amp; 1 &amp; 3 &amp;\\
+&amp; 5 &amp; 1 &amp; 2 &amp; 4 &amp;\\
+\end{bmatrix}
+\quad
+\)</span>$</p>
+<ul class="simple">
+<li><p>hasilnya: <span class="math notranslate nohighlight">\(M_{14}\)</span>=-6</p></li>
+<li><p>kofaktor:
+<span class="math notranslate nohighlight">\(C_{14}\)</span>​ = <span class="math notranslate nohighlight">\((−1)^{1+4}\)</span><span class="math notranslate nohighlight">\(M_{14}\)</span> ​= (1)(-6)=-6</p></li>
+<li><p>Minor dan Kofaktor <span class="math notranslate nohighlight">\(C_{15}\)</span></p></li>
+</ul>
+<p><span class="math notranslate nohighlight">\(M_{15}\)</span> =
+$<span class="math notranslate nohighlight">\(
+\begin{bmatrix}
+&amp; 2 &amp; 3 &amp; 4 &amp; 5 &amp;\\
+&amp; 3 &amp; 4 &amp; 5 &amp; 1 &amp;\\
+&amp; 4 &amp; 5 &amp; 1 &amp; 2 &amp;\\
+&amp; 5 &amp; 1 &amp; 2 &amp; 3 &amp;\\
+\end{bmatrix}
+\quad
+\)</span>$</p>
+<ul class="simple">
+<li><p>hasilnya: <span class="math notranslate nohighlight">\(M_{15}\)</span>=6</p></li>
+<li><p>kofaktor:
+<span class="math notranslate nohighlight">\(C_{15}\)</span>​ = <span class="math notranslate nohighlight">\((−1)^{1+5}\)</span><span class="math notranslate nohighlight">\(M_{15}\)</span> ​= (1)(6)=6</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\displaystyle
+\begin{aligned}
+detA
+&amp;= 1(-24) + 2(-18) + 3(12) + 4(-6) + 5(6) \\
+&amp;= -24 - 36 + 36 - 24 + 30\\
+&amp;= -18
+\end{aligned}
+\end{split}\]</div>
 </section>
 </section>
 
@@ -964,6 +1301,15 @@ x_3
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#selesaikan-dengan-menggunakan-invers-matriks-kemudian-invers-dicari-menggunakan-obe">Selesaikan dengan menggunakan invers matriks, kemudian invers dicari menggunakan OBE</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#determinan-matriks">Determinan matriks</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#minor-matriks">Minor Matriks</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#kofaktor-matriks">Kofaktor Matriks</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#hubungan-matriks-minor-kofaktor">Hubungan Matriks Minor &amp; Kofaktor</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mencari-determinan-dengan-konsep-minor-dan-kofactor-matriks-contoh-matriks-3x3-4x4-dan-5x5">Mencari Determinan Dengan Konsep Minor dan Kofactor Matriks. Contoh Matriks 3x3 4x4 dan 5x5</a></li>
 </ul>
   </nav></div>
 
